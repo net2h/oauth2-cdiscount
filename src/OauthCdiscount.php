@@ -127,4 +127,13 @@ class OauthCdiscount implements InterfaceUsine
             'callback_uri' => $config['redirect'],
         ], $config);
     }
+
+    public static function cdiscountOauth(){
+        $oauthCdiscount = new OauthCdiscount(Configuration::loadConfig());
+        $response = $oauthCdiscount->driver('cdiscount')->redirect();
+        $response->setStatusCode(Response::HTTP_TEMPORARY_REDIRECT);
+        $response->headers->set('Content-Type', 'text/html');
+        $response->send();
+    }
+
 }
