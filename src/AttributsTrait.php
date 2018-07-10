@@ -30,7 +30,7 @@ trait AttributsTrait
     }
 
     
-    public function merge(array $attributes): AttributsTrait
+    public function merge(array $attributes)
     {
         $this->attributes = array_merge($this->attributes, $attributes);
 
