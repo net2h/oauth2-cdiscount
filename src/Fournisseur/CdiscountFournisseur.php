@@ -16,7 +16,11 @@ class CdiscountFournisseur extends FournisseurAbstrait implements InterfaceFourn
 
 
     protected $scopes = [
-        'user_profile'
+        'user_profile',
+        'user_profile.phone',
+        'user_profile.phoneNumber',
+        'user_profile.address',
+        'user_profile.birthdate',
     ];
 
 
