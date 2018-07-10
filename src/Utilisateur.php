@@ -57,7 +57,19 @@ class Utilisateur implements ArrayAccess, InterfaceUtilisateur, JsonSerializable
      */
     public function getName()
     {
-        return $this->getAttribute('name');
+        return $this->getAttribute('lastname');
+    }
+
+
+    public function getCivility()
+    {
+        return $this->getAttribute('civility');
+    }
+
+
+    public function getFirstName()
+    {
+        return $this->getAttribute('firstname');
     }
 
     /**
