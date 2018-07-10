@@ -52,7 +52,7 @@ class CdiscountFournisseur extends FournisseurAbstrait implements InterfaceFourn
 
     protected function getUserByToken(InterfaceToken $token)
     {
-        $response = $this->getHttpClient()->get('https://orchestration.recette-cdiscount.com/CConnect/GetCustomer', [
+        $response = $this->getHttpClient()->get('https://orchestration.cdiscount.com/CConnect/GetCustomer', [
             'query' => [
                 'prettyPrint' => 'false',
             ],
