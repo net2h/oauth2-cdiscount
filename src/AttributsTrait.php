@@ -22,7 +22,7 @@ trait AttributsTrait
     }
 
     
-    public function setAttribute($name, $value): AttributsTrait
+    public function setAttribute($name, $value)
     {
         $this->attributes[$name] = $value;
 
@@ -50,7 +50,7 @@ trait AttributsTrait
     }
 
     
-    public function offsetSet($offset, $value): AttributsTrait
+    public function offsetSet($offset, $value)
     {
         return $this->setAttribute($offset, $value);
     }
