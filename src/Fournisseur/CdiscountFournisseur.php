@@ -71,12 +71,12 @@ class CdiscountFournisseur extends FournisseurAbstrait implements InterfaceFourn
     protected function mapUserToObject(array $user): Utilisateur
     {
         return new Utilisateur([
-            'id' => $this->arrayItem($user, 'CustomerReference'),
+            'id' => $this->arrayItem($user, 'CustomerGuid'),
             'civility' => $this->arrayItem($user, 'Civility'),
-            'firstname' => $this->arrayItem($user, 'Firstname'),
-            'lastname' => $this->arrayItem($user, 'Lastname'),
-            'login' => $this->arrayItem($user, 'Login'),
-            'dateofbirth' => $this->arrayItem($user, 'DateOfBirth'),
+            'firstname' => $this->arrayItem($user, 'FirstName'),
+            'lastname' => $this->arrayItem($user, 'FirstName'),
+            'email' => $this->arrayItem($user, 'Email'),
+            'hasCdav' => $this->arrayItem($user, 'HasCdav'),
         ]);
     }
 }
