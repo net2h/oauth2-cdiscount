@@ -72,6 +72,40 @@ class Utilisateur implements ArrayAccess, InterfaceUtilisateur, JsonSerializable
         return $this->getAttribute('firstname');
     }
 
+    public function getAddressLine1()
+    {
+        return $this->getAttribute('addressLine1');
+    }
+
+    public function getAddressLine2()
+    {
+        return $this->getAttribute('addressLine2');
+    }
+
+    public function getZipCode()
+    {
+        return $this->getAttribute('zipCode');
+    }
+
+    public function getCity()
+    {
+        return $this->getAttribute('city');
+    }
+
+    public function getCountry()
+    {
+        return $this->getAttribute('country');
+    }
+    public function getBirthdate()
+    {
+        return $this->getAttribute('birthdate');
+    }
+
+    public function getPhoneNumber()
+    {
+        return $this->getAttribute('phoneNumber');
+    }
+
     /**
      * Obtenir l'adresse e-mail de l'utilisateur.
      *

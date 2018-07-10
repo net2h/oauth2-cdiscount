@@ -81,6 +81,13 @@ class CdiscountFournisseur extends FournisseurAbstrait implements InterfaceFourn
             'lastname' => $this->arrayItem($user, 'FirstName'),
             'email' => $this->arrayItem($user, 'Email'),
             'hasCdav' => $this->arrayItem($user, 'HasCdav'),
+            'addressLine1' => $this->arrayItem($user, 'AddressLine1'),
+            'addressLine2' => $this->arrayItem($user, 'AddressLine2'),
+            'zipCode' => $this->arrayItem($user, 'ZipCode'),
+            'city' => $this->arrayItem($user, 'City'),
+            'country' => $this->arrayItem($user, 'Country'),
+            'birthdate' => $this->arrayItem($user, 'Birthdate'),
+            'phoneNumber' => $this->arrayItem($user, 'PhoneNumber'),
         ]);
     }
 }
