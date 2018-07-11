@@ -88,6 +88,7 @@ class CdiscountFournisseur extends FournisseurAbstrait implements InterfaceFourn
             'country' => $this->arrayItem($user['Address'], 'Country'),
             'birthdate' => $this->arrayItem($user, 'Birthdate'),
             'phoneNumber' => $this->arrayItem($user, 'PhoneNumber'),
+            'phone' => $this->arrayItem($user, 'Phone'),
         ]);
     }
 }

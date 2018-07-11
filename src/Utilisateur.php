@@ -106,6 +106,11 @@ class Utilisateur implements ArrayAccess, InterfaceUtilisateur, JsonSerializable
         return $this->getAttribute('phoneNumber');
     }
 
+    public function getPhone()
+    {
+        return $this->getAttribute('phone');
+    }
+
     /**
      * Obtenir l'adresse e-mail de l'utilisateur.
      *
