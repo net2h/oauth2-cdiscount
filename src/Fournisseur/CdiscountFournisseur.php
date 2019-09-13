@@ -21,6 +21,7 @@ class CdiscountFournisseur extends FournisseurAbstrait implements InterfaceFourn
         'user_profile.phoneNumber',
         'user_profile.address',
         'user_profile.birthdate',
+        'user_profile.HasCdav'
     ];
 
 
@@ -74,6 +75,7 @@ class CdiscountFournisseur extends FournisseurAbstrait implements InterfaceFourn
 
     protected function mapUserToObject(array $user): Utilisateur
     {
+
         return new Utilisateur([
             'id' => $this->arrayItem($user, 'CustomerGuid'),
             'civility' => $this->arrayItem($user, 'Civility'),
